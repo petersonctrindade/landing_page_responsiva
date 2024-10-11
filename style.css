@@ -1,0 +1,85 @@
+* {
+    color: white;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 4rem auto;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    padding: 15px 0;
+    background-color: #ffffff;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+main {
+    overflow-y: auto;
+}
+
+.illust {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
+    background-color: unset;
+    background-image: url(https://cdn.pixabay.com/photo/2014/12/21/18/51/hotel-575085_1280.jpg);
+}
+
+div {
+    padding: 0% 15%;
+}
+
+.content {
+    min-height: 50%;
+}
+
+.illust:nth-child(1) {
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/09/09/13/house-5148865_1280.jpg);
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin: 0;
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    p {
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    button {
+        width: 12rem;
+        border: none;
+        background-color: slateblue;
+        color: white;
+        height: 2.5rem;
+        border-radius: 10px;
+        font-size: large;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    
+    button:hover {
+        border-radius: 5px;
+        background-color: #5345ae;
+    }
+}
+
+.illust:nth-child(5) {
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/10/19/49/singapore-1132358_1280.jpg);
+}
